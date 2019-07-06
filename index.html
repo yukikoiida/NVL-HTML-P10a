@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Práctica formularios</title>
+  
+ </head>
+ <body>
+     <div>
+        <form  method="post" action="miservidor.php">
+            <div>
+                <label for="cp">Código postal</label>      
+                <input id="cp" type="number"> 
+                <br> <br>
+            </div>
+            <div>
+                  <label for=”satisfaccion”>Nivel de satisfacción</label>
+                  <select id=”satisfaccion”>
+                    <option value=”1”>1</option>
+                    <option value=”2”>2</option>
+                    <option value=”3”>3</option>
+                    <option value=”4”>4</option>
+                    <option value=”5”>5</option>
+                  </select> 
+                 <br> <br>
+            </div>
+            <div>
+                <label for="mail">Email del usuario que ha consumido el producto</label>
+                <input id="mail" type="text">
+                 <br> <br>
+            </div>
+            <div>
+                <label for="puntoPositivo">Escribe los puntos positivos del producto</label><br>
+                <textarea rows="6" cols="50"></textarea>
+                 <br> <br>
+            </div>
+            <div>
+                <label for="puntoNegativo">Escribe los puntos negativos del producto</label><br>
+                <textarea rows="6" cols="50"></textarea>
+                 <br> <br>
+            </div>
+            <div>
+                <label>A continuación selecciona el valor que más se ajuste a las siguientes caracteríasticas: </label>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Pésimo</th>
+                            <th>Regular</th>
+                            <th>Bueno</th>
+                            <th>Excelente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Relación calidad-precio</th>
+                            <th><input name="calidadPrecio" type="checkbox" value="p"></th>
+                            <th><input name="calidadPrecio" type="checkbox" value="r"></th>
+                            <th><input name="calidadPrecio" type="checkbox" value="b"></th>
+                            <th><input name="calidadPrecio" type="checkbox" value="e"></th>
+                        </tr>
+                        <tr>
+                            <th>Relación sabor del producto</th>
+                            <th><input name="sabor" type="checkbox" value="p"></th>
+                            <th><input name="sabor" type="checkbox" value="r"></th>
+                            <th><input name="sabor" type="checkbox" value="b"></th>
+                            <th><input name="sabor" type="checkbox" value="e"></th>
+                        </tr>
+                        <tr>
+                            <th>Relación textura del producto</th>
+                            <th><input name="textura" type="checkbox" value="p"></th>
+                            <th><input name="textura" type="checkbox" value="r"></th>
+                            <th><input name="textura" type="checkbox" value="b"></th>
+                            <th><input name="textura" type="checkbox" value="e"></th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+            </div>
+            <div>
+                  <label for=”opinion”>A continuación selecciona el valor que más se ajuste a las siguientes caracteríasticas: </label>
+                    <br><br>
+                    <label for=”cantidad”>Cantidad</label>
+                      <select id=”cantidad”>
+                        <option value=”e”>Excelente</option>
+                        <option value=”b”>Bueno</option>
+                        <option value=”r”>Regular</option>
+                        <option value=”p”>Pésimo</option>
+                      </select> 
+                    <br>
+                    <label for=”encontrarlo”>Facilidad para encontrar el producto</label>
+                      <select id=”encontrarlo”>
+                        <option value=”e”>Excelente</option>
+                        <option value=”b”>Bueno</option>
+                        <option value=”r”>Regular</option>
+                        <option value=”p”>Pésimo</option>
+                      </select> 
+            </div>
+        </form>
+     </div>
+ </body>
+</html>
